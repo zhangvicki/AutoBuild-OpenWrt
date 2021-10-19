@@ -73,10 +73,9 @@ jobs:
         ./scripts/feeds install -a
         ./scripts/feeds install -a
 
-    - name: Import external feeds - passwall
+    - name: Import external feeds - opentopd
       working-directory: ./openwrt
       run: |
-    #    git clone https://github.com/xiaorouji/openwrt-passwall.git package/lienol
         git clone https://github.com/siropboy/sirpdboy-package package/sirpdboy-package      
 
     #- name: Import external feeds - JerryKuKu Argon
